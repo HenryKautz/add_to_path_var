@@ -9,8 +9,8 @@ add_to_path_var() {
     return 1
   fi
 
-  # Only add if dir exists
-  if [ ! -d "$dir" ]; then
+  # Only add if path exists
+  if [ ! -e "$dir" ]; then
      return
   fi
   
